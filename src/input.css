@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
+@theme {
+  --font-eb: "EB Garamond", serif;
+  --font-roboto: "Roboto", sans-serif;
+}

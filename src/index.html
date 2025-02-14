@@ -6,47 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css" />
+</head>
 
 <body>
-    <div class="bg-[#011F5B] text-white p-2">
-        <div class="border border-gray-400 p-12">
-            <h1 class="underline text-2xl mb-6 hover:no-underline">On Friday, February 14, 2025 the
+    <div id="Top" class="bg-[#011F5B] text-white p-2">
+        <div class="border border-gray-400 py-12">
+            <h1 class="underline text-2xl mb-4 hover:no-underline">On Friday, February 14, 2025 the
                 University will suspend
                 normal
                 operations
                 for the
                 Eagles victory parade
             </h1>
-            <p class="fo">Normal operations will resume Monday, February 17, 2025</p>
+            <p>Normal operations will resume Monday, February 17, 2025</p>
         </div>
     </div>
-    <nav>
-        <div>
+    <div id="content" class="relative  bg-[url(/bird.jpeg)] bg-cover">
+        <div id="blackTopLayer" class="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+        <header class="w-full relative top-0 font-roboto font-semibold flex flex-col">
+            <div id="navTop"
+                class="border-0 border-b border-b-white grid grid-cols-3 justify-between items-center lg:grid-cols-2 px-5 text-white">
+                <div id="logoSection" class="py-5 order-2 lg:order-1 max-w-[200px]">
+                    <img src="../logo_light.svg" alt="" class="">
+                    <img src="../logo_dark.svg" alt="" class="hidden">
+                </div>
+                <div id="searchSection"
+                    class="lg:grid lg:grid-cols-3 lg:w-fit lg:justify-center lg:justify-self-end items-center order-1 lg:order-2">
+                    <span id="searchBar" class="block cursor-pointer lg:w-fit lg:justify-self-end lg:mr-5">
+                        <img src="../searchBar_light.png" alt="" class="w-8">
+                        <img src="../searchBar_dark.png" alt="" class="hidden">
+                    </span>
+                    <span id="resourceText"
+                        class="hidden text-base lg:flex lg:flex-row lg:justify-self-center lg:w-fit lg:gap-x-1">
+                        <span class="text-sm">RESOURCES</span>
+                        <span id="resourceDrops" class="w-[12px] cursor-pointer self-center h-auto">
+                            <img src="../dropDown_light.webp" alt="">
+                            <img src="../dropDown_dark.webp" alt="" class="hidden">
+                        </span>
+                    </span>
+                    <button class="text-[0.9rem] hidden lg:inline-block lg:w-fit bg-red-800 text-white px-8 py-4">GIVE
+                        TO
+                        PENN</button>
+                </div>
+                <div id="hamSection" class="lg:hidden order-3 flex flex-col items-end">
+                    <span class="w-fit cursor-pointer">
+                        <img src="../ham_light.webp" alt="" class="w-6">
+                        <img src="../ham_dark.webp" alt="" class="hidden">
+                    </span>
+                </div>
+            </div>
+            <nav id="navigation"
+                class="hidden lg:flex lg:flex-row lg:gap-y-3 lg:w-fit lg:h-fit lg:ml-auto text-white lg:mt-3">
+                <ul id="navList" class="flex flex-row gap-x-6 mr-4">
+                    <li>
+                        <span class="flex flex-row items-center">
+                            <span id="navText1">ACADEMICS</span>
+                            <span id="navDropper1" class="w-[15px] ml-1">
+                                <img src="../dropDown_light.webp" alt="">
+                                <img src="../dropDown_dark.webp" alt="" class="hidden">
+                            </span>
+                            <span class="font-extrabold text-gray-400 ml-2">/</span>
+                        </span>
+                    </li>
+                    <li>ADMISSION & AIDS <span class="font-extrabold text-gray-400 ml-2">/</span></li>
+                    <li>ATHLETICS <span class="font-extrabold text-gray-400 ml-2">/</span></li>
+                    <li>
+                        <span class="flex flex-row items-center">
+                            <span id="navText2">RESEARCH & INNOVATION</span>
+                            <span id="navDropper2" class="w-[15px] ml-1">
+                                <img src="../dropDown_light.webp" alt="">
+                                <img src="../dropDown_dark.webp" alt="" class="hidden">
+                            </span>
+                            <span class="font-extrabold text-gray-400 ml-2">/</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex flex-row items-center">
+                            <span id="navText3">LIFE AT PENN</span>
+                            <span id="navDropper3" class="w-[15px] ml-1">
+                                <img src="../dropDown_light.webp" alt="">
+                                <img src="../dropDown_dark.webp" alt="" class="hidden">
+                            </span>
+                            <span class="font-extrabold text-gray-400 ml-2">/</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="flex flex-row items-center">
+                            <span id="navText4">ABOUT</span>
+                            <span id="navDropper4" class="w-[15px] ml-1">
+                                <img src="../dropDown_light.webp" alt="">
+                                <img src="../dropDown_dark.webp" alt="" class="hidden">
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="w-full h-[400px] relative z-10">
+            <div class="text-white p-12 flex flex-col gap-6 w-2xl h-18">
+                <h class="font-roboto font-bold">Health Sciences</h>
+                <p class="text-4xl font-eb max-w[28ch]">How Penn is helping with bird flu research and disease
+                    surveillance</p>
+                <span class="w-[50px] min-h-[5px] bg-gray-500"> </span>
+                <p1 class="font-eb text-2xl">Faculty are working on a new vaccine for the H5N1 virus, studying its
+                    transmission,
+                    and
+                    helping the
+                    state test samples from birds and mammals.
+                </p1>
+            </div>
+        </main>
+    </div>
+    <div class="News w-full mb-30">
+        <div class="grid grid-cols-4 gap-4 w-[90%] m-auto">
+            <div class="col-span-2 row-span-2">
+                <img src="../pavilion.jpeg" alt="" class="m-auto" />
+                <p href="#" class="text-sm text-red-400 m-auto p-2 text-center">
+                    <a href="" class="hover:underline">HEALTH SCIENCES</a>
+                </p>
+                <p href="#" class="m-auto p-2 text-center w-[85%]">
+                    <a href="" class="hover:underline text-blue-950">Catherine and Anthony Clifton make transformational
+                        gift to
+                        accelerate patient care, research, and education at Penn Medicine
+                        Catherine and Anthony Clifton make transformational gift to
+                        accelerate patient care, research, and education at Penn Medicine
+                    </a>
+                </p>
+            </div>
 
+
+            <div class="">
+                <img src="../epstein.jpeg" alt="" class="m-auto" />
+                <p href="#" class="text-sm text-red-400 m-auto p-1 text-center">
+                    <a href="" class="hover:underline">HEALTH SCIENCES</a>
+                </p>
+                <p href="#" class="m-auto p-1 text-center">
+                    <a href="" class="hover:underline text-blue-950">Jonathan A. Epstein named head of Perelman School
+                        of Medicine and
+                        Penn Health System
+                    </a>
+                </p>
+            </div>
+
+            <div class="">
+                <img src="../america-250-teaser-social-main.jpg" alt="" class="m-auto" />
+                <p href="#" class="text-sm text-red-400 m-auto p-1 text-center">
+                    <a href="" class="hover:underline">ARTS, HUMANITIES, & SOCIAL SCIENCES</a>
+                </p>
+                <p href="#" class="m-auto p-1 text-center">
+                    <a href="" class="hover:underline text-blue-950">Penn prepares to mark America's 250th birthday
+                    </a>
+                </p>
+            </div>
+
+            <div class="">
+                <img src="../preservation-campus-teaser.jpg" alt="" class="m-auto" />
+                <p href="#" class="text-sm text-red-400 m-auto p-1 text-center">
+                    <a href="" class="hover:underline">ARTS, HUMANITIES, & SOCIAL SCIENCES</a>
+                </p>
+                <p href="#" class="m-auto p-1 text-center">
+                    <a href="" class="hover:underline text-blue-950">Jonathan A. Epstein named head of Perelman School
+                        of Medicine and
+                        Penn Health System
+                    </a>
+                </p>
+            </div>
+
+            <div class="">
+                <img src="../chan-vanessa-teaser.jpg" alt="" class="m-auto" />
+                <p href="#" class="text-sm text-red-400 m-auto p-1 text-center">
+                    <a href="" class="hover:underline">SCIENCE & TECHNOLOGY</a>
+                </p>
+                <p href="#" class="m-auto p-1 text-center">
+                    <a href="" class="hover:underline text-blue-950">Vanessa Chan bridges the gap between innovation and
+                        the market
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-span-2"></div>
+            <div class="col-span-2 m-auto">
+                <p href="#" class="text-sm text-red-400 m-auto p-1 text-center">
+                    <a href="" class="hover:underline">MORE NEWS VIA PENN TODAY</a>
+                </p>
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="#">ACADEMICS <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">ADMISSIONS & AID</a>
-                </li>
-                <li>
-                    <a href="#">ATHLETICS</a>
-                </li>
-                <li>
-                    <a href="#">RESEARCH & INNOVATION <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">LIFE AT PENN <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">ABOUT <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
 </body>
 
 </html>
